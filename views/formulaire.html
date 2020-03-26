@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <title>Votre nom</title>
 </head>
 
@@ -18,22 +22,32 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/users">Formulaire</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/user-create">Apercu</a>
-                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <h1>Votre nom</h1>
-    <form action="/user-create" method="POST">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Votre nom</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter votre nom">
-        </div>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
-      </form>
+    <div class="container">
+        <h1>Votre nom</h1>
+        <form action="/user-create" method="POST">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Votre nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter votre nom" name="name">
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+
+
+        <h1>Votre image</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="sampleFile">
+            <button type="submit">Télécharger</button>
+        </form>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 
