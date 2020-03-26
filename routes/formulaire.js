@@ -1,13 +1,10 @@
 // ce dont j'ai besoin
 const express = require('express');
+const path = require('path');
 const route = express.Router();
 
 route.get('/users', (req, res, next) => {
-    res.send(`
-        <form action="/user-create" method="POST">
-        <input type="text" name="name" placeholder="Votre nom">
-        <button type="submit">Envoyer</button>
-        </form>`);
+    res.sendFile(path.join(__dirname, '../', 'views', 'formulaire.html'));
 });
 
 
