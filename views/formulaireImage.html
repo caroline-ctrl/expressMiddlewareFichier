@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Accueil</title>
+    <title>Votre nom</title>
 </head>
 
 <body>
@@ -20,31 +20,36 @@
                         <a class="nav-link" href="/">Accueil</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Formulaires
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="/users">Nom</a>
-                          <a class="dropdown-item" href="/users-image">Image</a>
-                          <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/users">Nom</a>
+                            <a class="dropdown-item" href="/users-image">Image</a>
+                            <div class="dropdown-divider"></div>
                         </div>
-                      </li>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="container">
-        <h1>Bienvenue sur ce site</h1>
-
-
-    </div>
-
-
+    <!-- <div class="container">
+        <h1>Votre image</h1>
+        <form action="/telecharger" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="photo">Télécharger une image</label>
+                <input type="file" accept="image/*" name="photo" class="form-control-file"><br>
+                <button type="submit" name="upload" class="btn btn-primary">Télécharger</button>
+            </div>
+        </form>
+    </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

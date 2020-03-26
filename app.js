@@ -6,7 +6,10 @@ const parser = require('body-parser');
 const path = require('path');
 
 const app = express();
+
 app.use(parser.urlencoded({extended: true}));
+// pour le css : aller chercher dans le dossier public
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(accueilRoute);
 app.use(formulaireRoute);
