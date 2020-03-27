@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Votre nom</title>
+    <title>Votre fichier</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/users">Nom</a>
-                            <a class="dropdown-item" href="/users-image">Image</a>
+                            <a class="dropdown-item" href="/users-fichier">Fichier</a>
                             <div class="dropdown-divider"></div>
                         </div>
                     </li>
@@ -35,16 +35,16 @@
         </nav>
     </header>
 
-    <!-- <div class="container">
-        <h1>Votre image</h1>
-        <form action="/telecharger" method="POST" enctype="multipart/form-data">
+    <div class="container">
+        <h1>Votre fichier</h1>
+        <form action="/user-message" method="POST">
             <div class="form-group">
-                <label for="photo">Télécharger une image</label>
-                <input type="file" accept="image/*" name="photo" class="form-control-file"><br>
-                <button type="submit" name="upload" class="btn btn-primary">Télécharger</button>
+                <label for="message">Un message</label>
+                <input type="text" name="message" class="form-control-file"><br>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
             </div>
         </form>
-    </div> -->
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>

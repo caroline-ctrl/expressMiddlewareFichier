@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <title>Erreur 404</title>
 </head>
 
@@ -15,15 +19,26 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Accueil</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users">Formulaire</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Formulaires
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/users">Nom</a>
+                          <a class="dropdown-item" href="/users-fichier">Fichier</a>
+                          <div class="dropdown-divider"></div>
+                        </div>
+                      </li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <h1>Erreur 404</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 
