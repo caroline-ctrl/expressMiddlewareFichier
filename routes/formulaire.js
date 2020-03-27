@@ -5,16 +5,17 @@ const fs = require('fs');
 
 const route = express.Router();
 
-
+// envoie vers la page formulaireNom.html
 route.get('/users', (req, res) => {
     res.sendFile(path.join(__dirname, '../', 'views', 'formulaireNom.html'));
 });
 
+// envoie vers la page formulaireFichier.html
 route.get('/users-fichier', (req, res) => {
     res.sendFile(path.join(__dirname, '../', 'views', 'formulaireFichier.html'));
 });
 
-
+// affiche le nom de /user
 route.post('/user-create', (req, res) => {
     res.send(`
     <link rel="stylesheet" href="/styles/main.css">
@@ -24,7 +25,8 @@ route.post('/user-create', (req, res) => {
     </body>`);
 });
 
-
+// met le contenu de l'input de /users-fichier dans un fichier message.txt
+// et l'affiche dans la console
 route.post('/user-message', (req, res) => {
     const message = req.body.message;
     console.log(message);
